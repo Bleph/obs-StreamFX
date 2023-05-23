@@ -180,4 +180,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: "${{ matrix.runner }}-${{ matrix.generator }}-qt${{ matrix.qt }}"
-        path: "${{ github.workspace }}/build/ci/StreamFx*.exe"
+        path: "${{ github.workspace }}/build/ci/StreamFX*.exe"
