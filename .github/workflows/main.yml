@@ -28,7 +28,7 @@ jobs:
       matrix:
         runner: [ "windows-2022" ]
         name: [ "Windows" ]
-        compiler: [ "MSVC", "Clang" ]
+        compiler: [ "MSVC" ]
         qt: [ 6 ]
         include:
           - compiler: "MSVC"
@@ -180,4 +180,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: "${{ matrix.runner }}-${{ matrix.generator }}-qt${{ matrix.qt }}"
-        path: "${{ github.workspace }}/build/ci/StreamFX*.exe"
+        path: "${{ github.workspace }}/build/ci/"
